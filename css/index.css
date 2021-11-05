@@ -135,78 +135,53 @@ button:hover{
     width:100%;
 }
 
-@media(max-width: 800px){
-    .title-container div{
-        width: 100%;
-        height:65vw;
-        margin-bottom: 1%;
-    }
-    
-    .title-container hr{
-        width: 100%;
-    }
-    
-    .title-container h1{
-        margin-top: 5%;
-        line-height: 1.2;
-    }
-    
-    button{
-        padding: 1% 4%;
-    }
-    
-    .artists-container{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 8vh;
+
+@media(max-width:500px){ 
+    nav {
+        display: flex;
+        justify-content: center;
     }
 
-    .artist{
-        width: 75%;
+    nav a {
+        font-size: 1.6rem;
+        margin: 0 3%;
     }
 
-    .artist img{
-        height: 32vh;
-        width: auto;
+    nav span{
+        border-left:1px solid #626262;
     }
 
-    .artists .bio{
-        line-height: 1;
-    }
-    }
-
-@media(max-width: 500px){
-    a{
-        font-size: 1.4rem;
+    .title-container h1 {
+        font-size: 3.6rem;
     }
 
-    .title-container div{
-        height: 35vh;
-        background-position: center;
-        background-size: 700px;
+    .title-container div {	
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
+        background-size: cover;
         background-repeat: no-repeat;
+        color: white;	
+        width:80%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:40vh;
+        margin:5% 0;
     }
 
-    .title-container h1{
-        font-size: 3rem;
+    .artists-container {
+        display: flex;
+        flex-direction: column;
     }
 
-    button{
-        font-size: 1rem;
-        padding: 1% 6%;
+    .artist {
+        width: 100%;
     }
 
-    .artist img{
-        height: 22vh;
-    }
-
-    .artist a{
-        font-size: 1.2rem;
-    }
-
-    .artist .bio{
-        font-size: 1rem;
+    .artist img {
+        width: 70%;
+        height: 70%;
     }
 }
 
+    
